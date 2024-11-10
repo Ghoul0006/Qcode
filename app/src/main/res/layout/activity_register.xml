@@ -5,41 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e6ddff"
     tools:context=".RegisterActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
-        android:gravity="center">
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:backgroundTint="#8065ac"
+            android:textColor="#baa5e3"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/etCpf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="CPF"
-            android:inputType="number" />
+            android:inputType="number"
+            android:backgroundTint="#8065ac"
+            android:textColor="#baa5e3"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:backgroundTint="#8065ac"
+            android:textColor="#baa5e3"
+            android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cadastrar"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
             android:enabled="false" />
     </LinearLayout>
 

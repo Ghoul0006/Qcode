@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/audiowide"
-        android:text="QRCoder"
+        android:text="QCoder"
         android:textColor="#8065ac"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,17 +48,16 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:background="@drawable/button_selector"
+            android:text="LOGIN"
+            android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF" />
-
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:background="@drawable/button_selector"
+            android:text="REGISTRAR"
+            android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginTop="8dp" />
 
@@ -66,8 +65,8 @@
             android:id="@+id/btnScan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:background="@drawable/button_selector"
+            android:text="SCAN"
+            android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginTop="8dp" />
     </LinearLayout>

@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#e6ddff">
 
     <TextView
         android:id="@+id/nameTextView"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Nome: "
         android:textSize="18sp"
+        android:textColor="#8065ac"
         android:layout_marginBottom="8dp" />
 
     <TextView
@@ -20,11 +22,22 @@
         android:layout_height="wrap_content"
         android:text="CPF: "
         android:textSize="18sp"
+        android:textColor="#8065ac"
         android:layout_marginBottom="16dp" />
 
     <ImageView
         android:id="@+id/qrCodeImageView"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="16dp"/>
+        android:layout_width="298dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>
