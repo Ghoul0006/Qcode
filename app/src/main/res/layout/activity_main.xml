@@ -10,25 +10,27 @@
 
     <ImageView
         android:id="@+id/appIcon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="338dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="96dp"
         android:src="@drawable/icon"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QRCoder"
-        android:textSize="24sp"
-        android:textColor="#FFFFFF"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/appIcon"
+        android:fontFamily="@font/audiowide"
+        android:text="QRCoder"
+        android:textColor="#8065ac"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/appIcon" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,22 +40,25 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:background="@drawable/gradient_button"
+            android:background="@drawable/button_selector"
             android:textColor="#FFFFFF" />
+
 
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrar"
-            android:background="@drawable/gradient_button"
+            android:text="Login"
+            android:background="@drawable/button_selector"
             android:textColor="#FFFFFF"
             android:layout_marginTop="8dp" />
 
@@ -61,8 +66,8 @@
             android:id="@+id/btnScan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scan"
-            android:background="@drawable/gradient_button"
+            android:text="Login"
+            android:background="@drawable/button_selector"
             android:textColor="#FFFFFF"
             android:layout_marginTop="8dp" />
     </LinearLayout>
